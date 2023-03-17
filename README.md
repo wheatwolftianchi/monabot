@@ -11,6 +11,8 @@ input state that you want by using keyboard
  - 4 - default on board route
  - 5 - start live program mode
  
+ While in waiting for state layer, if you input a program, the monabot will immediatly start to perform the program you entre, the program syntax is the same as program mode syntax, this function can only be activated when the monabot is connected to the computer using cable, this function is mainly used for testing. In using, the usage of state 5 live program mode is highly recommanded. 
+ 
  # LED showing working condition
  There is a RGB LED on each side of the monabot. 
  When the monabot is waiting for command after you entre state 5, both LEDs will be light on with colour of light blue(0,255,255). The monabot will wait untill you entre a command no matter if it is correctly or not. 
