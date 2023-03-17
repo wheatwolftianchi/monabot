@@ -82,7 +82,7 @@ std::vector<std::string> separate_string(const std::string& input_str) {
 
 
 int initialize_left = 100;
-int initialize_right = 93;
+int initialize_right = 90.5;
 int state = 0;
 void setup() {
   // put your setup code here, to run once:
@@ -116,11 +116,11 @@ void loop() {
   }
   if(state == 2){
   //Spin to the left
-    Motors_spin_left(60);
+    Motors_spin_left(72*initialize_left/initialize_right);
   }
   if(state == 3){
   //Spin to the right
-    Motors_spin_right(60*initialize_left/initialize_right);
+    Motors_spin_right(72);
   }
   if(state == 4){
     flash();
@@ -180,12 +180,12 @@ void loop() {
         if (elem == "l")
         {
           Serial.println("llllllllll");
-          Motors_spin_left(60);
+          Motors_spin_left(72*initialize_left/initialize_right);
         }
         if (elem == "r")
         {
           Serial.println("rrrrrrrrrrrr");
-          Motors_spin_right(60*initialize_left/initialize_right);
+          Motors_spin_right(72);
         }
         if (elem == "s")
         {

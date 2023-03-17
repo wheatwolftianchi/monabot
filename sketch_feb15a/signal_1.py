@@ -3,7 +3,7 @@ import time
 import re
 
 print(serial.__version__)
-ser0 = serial.Serial('COM3', 9600)
+ser0 = serial.Serial('COM4', 9600)
 #ser1 = serial.Serial('COM4', 9600)
 time.sleep(2)
 
